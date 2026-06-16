@@ -1,6 +1,6 @@
-# PRIO Agentic Platform — Design workspace (new structure)
+# OCTA Agentic Platform — Design workspace (new structure)
 
-ALZ-aligned restructure of the AI Landing Zone design workspace. The previous flat draft survives at the repository root as [../HLD.md](../HLD.md); this folder is the working artefact going forward.
+ALZ-aligned restructure of the AI Landing Zone design workspace. The previous flat draft survives at the repository root as [../HLD-old.md](../HLD-old.md) (deprecated, do not use); this folder is the working artefact going forward.
 
 ## Layout
 
@@ -29,5 +29,5 @@ ALZ-aligned restructure of the AI Landing Zone design workspace. The previous fl
 
 ## Relationship to root files
 
-- [../HLD.md](../HLD.md) is the previous flat draft (v0.1, single file, 19 sections inline with KDD/OQ tables). Kept as a baseline. Do not modify.
-- [../README.md](../README.md), [../20260514 Agentic platform_vF.pptx](../20260514%20Agentic%20platform_vF.pptx), [../transcripts/](../transcripts/), and [../recommendations/](../recommendations/) remain at the repository root. This folder references them via relative paths.
+- [../HLD-old.md](../HLD-old.md) is the previous flat draft (v0.1, single file, 19 sections inline with KDD/OQ tables). Deprecated baseline. Do not use or modify.
+- [../README.md](../README.md), [../transcripts/](../transcripts/), and [../recommendations/](../recommendations/) remain at the repository root. This folder references them via relative paths. The source deck now lives in this folder under [assets/decks/](assets/decks/).

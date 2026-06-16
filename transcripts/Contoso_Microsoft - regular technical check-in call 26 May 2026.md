@@ -1,10 +1,10 @@
-# Mitie_Microsoft - regular technical check-in call 26 May 2026
+# Contoso_Microsoft - regular technical check-in call 26 May 2026
 
-_Extracted from Mitie_Microsoft - regular technical check-in call 26 May 2026.docx_
+_Extracted from Contoso_Microsoft - regular technical check-in call 26 May 2026.docx_
 
 ---
 
-MitieMicrosoft - regular technical check-in call-20260526_130032UTC-Meeting Recording
+ContosoMicrosoft - regular technical check-in call-20260526_130032UTC-Meeting Recording
 26 May 2026, 01:00pm
 1h 15m 57s
 576072292608
@@ -1546,7 +1546,7 @@ Mike Agar   1:09:19
 I, I just...
 Yeah.
 So, I, I, yeah, so I don't, I don't think we need to change it. The question we need to work out is is this bit.
-Maybe these domains, right? If we really think the domains are a good idea, you know, should we just be having one mega resource group for dev or lots? You know, I don't quite understand the reason why we split it into these, what I think are basically arbitrary domains, right? I know we've got the Prio project with domains in it, but they're just random work streams that someone's come up with for a project.
+Maybe these domains, right? If we really think the domains are a good idea, you know, should we just be having one mega resource group for dev or lots? You know, I don't quite understand the reason why we split it into these, what I think are basically arbitrary domains, right? I know we've got the Octa project with domains in it, but they're just random work streams that someone's come up with for a project.
 576072292608
 Francisco Cachado   1:09:52
 Mhm.
@@ -1675,7 +1675,7 @@ But.
 Yeah, no, no.
 576072292608
 Mike Agar   1:13:48
-We got to remember Prio is a project. The work streams in Prio are completely arbitrary and transitory.
+We got to remember Octa is a project. The work streams in Octa are completely arbitrary and transitory.
 And therefore it cannot be in the KDD. We divided this up into groups that match the pre-o project structure. That cannot be the reason.
 So why did we divide it up this way? And we either need to come up with a logical reason why EFF is a sensible group, HR is a sensible group, sales is a sensible, you know, we have any good reasons or we need to rethink why we've done it.
 576072292608

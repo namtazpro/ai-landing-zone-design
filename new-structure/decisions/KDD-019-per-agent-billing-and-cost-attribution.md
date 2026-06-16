@@ -28,4 +28,4 @@ Track costs per agent and per domain. Combine token counts with service consumpt
 
 > we need to know which agent is consuming how much...agent-wise billing...token...consumption costs...also...hosting costs...will be account data
 
-— Sourabh, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Sourabh, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

@@ -28,4 +28,4 @@ Reuse the existing AIS API orchestration layer (logic apps + functions) for any 
 
 > you already have...an abstraction...then you can...expose as MCP...don't have to do further if you need...then you build it yourself
 
-— Mike and Ha Duong, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Mike and Ha Duong, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

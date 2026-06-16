@@ -1,23 +1,23 @@
-# PRIO Agentic Platform — High-Level Design (HLD)
+# OCTA Agentic Platform — High-Level Design (HLD)
 
 | Field | Value |
 | --- | --- |
 | Status | Draft |
 | Version | 0.2 (ALZ-aligned restructure) |
 | Last updated | 2026-06-08 |
-| Source baseline | [20260514 Agentic platform_vF.pptx](../../20260514%20Agentic%20platform_vF.pptx) (14 May 2026) |
+| Source baseline | [20260514 Agentic platform_vF.pptx](../assets/decks/20260514%20Agentic%20platform_vF.pptx) (14 May 2026) |
 | Decision log | [decisions/](../decisions/) (28 KDDs) |
 | Open questions | [open-questions/](../open-questions/) (20 OQs) |
 | Transcripts | [transcripts/](../../transcripts/) |
 | Compliance recommendations | [recommendations/kdd-compliance-in-code-reviews.md](../../recommendations/kdd-compliance-in-code-reviews.md) |
 
-This HLD aligns the PRIO Agentic Platform to the Azure Landing Zone (ALZ) design-area model. Each section either restates a decided position (with KDD references) or flags a gap to be filled in subsequent revisions. The previous flat draft survives unchanged at the repository root as [HLD.md](../../HLD.md); this version is the working artefact going forward.
+This HLD aligns the OCTA Agentic Platform to the Azure Landing Zone (ALZ) design-area model. Each section either restates a decided position (with KDD references) or flags a gap to be filled in subsequent revisions. This is the single working artefact; the superseded flat draft is retained out of band as `HLD-old.md` and is not part of this design.
 
 ---
 
 ## 1. Introduction and business context
 
-The PRIO Agentic Platform is the Azure target architecture for delivering agent-driven use cases for the Mitie / Microsoft engagement. It standardises how agents are defined, how tools are exposed, how workflows are orchestrated, and how the platform is secured, observed, and shipped through CI/CD. The platform is multi-tenant by domain (for example EFF, HR, Sales), Foundry-centred, and built on Microsoft Agent Framework as the orchestrator.
+The OCTA Agentic Platform is the Azure target architecture for delivering agent-driven use cases for the Contoso / Microsoft engagement. It standardises how agents are defined, how tools are exposed, how workflows are orchestrated, and how the platform is secured, observed, and shipped through CI/CD. The platform is multi-tenant by domain (for example EFF, HR, Sales), Foundry-centred, and built on Microsoft Agent Framework as the orchestrator.
 
 The platform serves three audiences: app teams building domain-specific agents, the central platform team operating shared services, and governance/security stakeholders enforcing enterprise policy.
 
@@ -39,7 +39,7 @@ Out of scope (for v1):
 
 Key assumptions:
 
-- The existing Mitie subscription pattern (non-prod + prod, resource-groups per domain) is reused — see [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md).
+- The existing Contoso subscription pattern (non-prod + prod, resource-groups per domain) is reused — see [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md).
 - One AI Foundry instance per business domain, with one Foundry project per use case — see [KDD-013](../decisions/KDD-013-one-foundry-instance-per-domain.md).
 - Microsoft Entra ID is the enterprise identity authority.
 
@@ -53,7 +53,7 @@ Key assumptions:
 > - Domain app teams — author agents, tools, and prompts in their domain spoke.
 > - Data scientists / prompt engineers — own evaluations, golden datasets, prompt iterations.
 > - Governance — InfoSec, FinOps, compliance reviewers.
-> - End users — Mitie internal and external consumers of agent-enabled experiences.
+> - End users — Contoso internal and external consumers of agent-enabled experiences.
 >
 > TODO: confirm persona list with stakeholders; tie each persona to expected RBAC roles in section 6.
 
@@ -134,7 +134,7 @@ MAF coexists with traditional orchestration (Logic Apps, Azure Data Factory) whi
 | Operational data | SQL Server is the system of record for operational business data. |
 | Knowledge base | Azure AI Search index (vector + semantic ranker) populated by an indexer skillset over blob/SharePoint, wrapped as a Foundry Knowledge Base object exposing an MCP URL. Agents autonomously call `knowledge_base_retrieve` when needed. |
 | Agent / workflow context | Per-agent session memory in Foundry; workflow-shared state via `ctx.set_state(key, value)` / `ctx.get_state(key)`. |
-| Persistent storage | SQL Server, Storage Accounts, Mitie Azure Data Lake. |
+| Persistent storage | SQL Server, Storage Accounts, Contoso Azure Data Lake. |
 | Fabric data connection | TBD — see [OQ-016](../open-questions/OQ-016-fabric-integration.md). |
 
 Open: [OQ-015](../open-questions/OQ-015-sql-knowledge-base-access-path.md), [OQ-016](../open-questions/OQ-016-fabric-integration.md).
@@ -193,13 +193,13 @@ Open: [OQ-014](../open-questions/OQ-014-per-agent-identity-vs-shared-sp.md), [OQ
 
 ## 9. Resource organization
 
-Working layout (carried forward from the current Mitie pattern):
+Working layout (carried forward from the current Contoso pattern):
 
 - **Subscriptions.** Two subscriptions — non-prod (dev + test) and prod. No subscription-per-domain split today; see [OQ-001](../open-questions/OQ-001-subscription-strategy.md).
 - **Resource groups.** One per domain per environment (for example `EFF-Dev`, `EFF-Test`, `HR-Prod`). See [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md).
 - **Shared hub.** One additional shared resource group hosts the hub Foundry and shared platform services (APIM, Toolbox, observability) — see [KDD-014](../decisions/KDD-014-hub-spoke-for-model-deployments.md).
 
-> TODO: confirm management-group placement, naming convention (per Mitie standard), and tagging schema (domain, environment, agent, cost-centre).
+> TODO: confirm management-group placement, naming convention (per Contoso standard), and tagging schema (domain, environment, agent, cost-centre).
 
 Decisions: [KDD-013](../decisions/KDD-013-one-foundry-instance-per-domain.md), [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md). Open: [OQ-001](../open-questions/OQ-001-subscription-strategy.md), [OQ-003](../open-questions/OQ-003-domain-definition-logic.md).
 
@@ -388,8 +388,8 @@ Each open question lives as its own file under [open-questions/](../open-questio
 
 **Source artefacts:**
 
-- Deck baseline — [20260514 Agentic platform_vF.pptx](../../20260514%20Agentic%20platform_vF.pptx).
+- Deck baseline — [20260514 Agentic platform_vF.pptx](../assets/decks/20260514%20Agentic%20platform_vF.pptx).
 - Transcript A — [Microsoft Support — Foundry platform and MCP servers, 22 May 2026](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md).
-- Transcript B — [Mitie / Microsoft regular technical check-in, 26 May 2026](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).
-- Predecessor draft — [HLD.md](../../HLD.md) (flat v0.1, kept for diff/baseline).
+- Transcript B — [Contoso / Microsoft regular technical check-in, 26 May 2026](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).
+- Predecessor draft — `HLD-old.md` (flat v0.1, deprecated; retained out of band for diff/baseline only).
 - KDD compliance recommendation — [recommendations/kdd-compliance-in-code-reviews.md](../../recommendations/kdd-compliance-in-code-reviews.md).

@@ -28,4 +28,4 @@ Ship v1 as 1:1 API→MCP exposure in APIM. Only introduce abstraction when pain 
 
 > maximise work not done...don't make that decision...publish it separately...then you make that decision later...when you see performance
 
-— Ha Duong and Mike, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Ha Duong and Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

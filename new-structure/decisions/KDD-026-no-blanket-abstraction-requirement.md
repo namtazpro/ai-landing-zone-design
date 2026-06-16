@@ -28,4 +28,4 @@ Not every API set needs custom abstraction. Well-designed, small API sets are ex
 
 > if we see the abstractions that needed...then we can implementing...got the place for it...feel the pain...performance degradation
 
-— Ha Duong and Mike, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Ha Duong and Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

@@ -26,4 +26,4 @@ The skip-custom-MCP decision ([KDD-020](../decisions/KDD-020-skip-custom-mcp-ser
 
 > can we do write code to deploy the MCP server in APP...assessment
 
-— Emma, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Emma, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

@@ -1,4 +1,4 @@
-# PRIO Agentic Platform — High-Level Design (HLD)
+# OCTA Agentic Platform — High-Level Design (HLD)
 
 | Field | Value |
 | --- | --- |
@@ -15,7 +15,7 @@ Draft HLD derived from the May 2026 architecture deck and the 22 May / 26 May te
 
 ## 1. Purpose and scope
 
-The PRIO Agentic Platform is the Azure target architecture for delivering agent-driven use cases for the Mitie / Microsoft engagement. It standardises how agents are defined, how tools are exposed, how workflows are orchestrated, and how the platform is secured, observed, and shipped through CI/CD. The platform is multi-tenant by domain (for example EFF, HR, Sales), Foundry-centred, and built on Microsoft Agent Framework as the orchestrator.
+The OCTA Agentic Platform is the Azure target architecture for delivering agent-driven use cases for the Contoso / Microsoft engagement. It standardises how agents are defined, how tools are exposed, how workflows are orchestrated, and how the platform is secured, observed, and shipped through CI/CD. The platform is multi-tenant by domain (for example EFF, HR, Sales), Foundry-centred, and built on Microsoft Agent Framework as the orchestrator.
 
 In scope:
 
@@ -216,7 +216,7 @@ Decisions: [KDD-005](#14-key-design-decisions-kdds), [KDD-007](#14-key-design-de
 | Operational data | SQL Server is the system of record for operational business data. |
 | Knowledge base | Azure AI Search index (vector + semantic ranker) populated by an indexer skillset over blob/SharePoint, wrapped as a Foundry Knowledge Base object exposing an MCP URL. Agents autonomously call `knowledge_base_retrieve` when needed. |
 | Agent / workflow context | Per-agent session memory in Foundry; workflow-shared state via `ctx.set_state(key, value)` / `ctx.get_state(key)` accessible across executors in a single run. |
-| Persistent storage | SQL Server, Storage Accounts, Mitie Azure Data Lake. |
+| Persistent storage | SQL Server, Storage Accounts, Contoso Azure Data Lake. |
 | Fabric data connection | TBD. |
 
 Open: [OQ-015](#15-open-questions), [OQ-016](#15-open-questions).
@@ -240,7 +240,7 @@ Decisions: [KDD-009](#14-key-design-decisions-kdds), [KDD-014](#14-key-design-de
 
 KDDs cite the relevant call transcript (date, speaker) and the HLD section they bind to. Source files:
 [Microsoft Support — Foundry platform and MCP servers, 22 May 2026](transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md) and
-[Mitie / Microsoft regular technical check-in, 26 May 2026](transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).
+[Contoso / Microsoft regular technical check-in, 26 May 2026](transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).
 
 | ID | Title | Decision | Status | Source (transcript / speaker / quote) | HLD section(s) |
 | --- | --- | --- | --- | --- | --- |
@@ -343,4 +343,4 @@ Deck slide 18 ("CI/CD – Base Image") was title-only in the source XML and coul
 
 - Deck baseline — [20260514 Agentic platform_vF.pptx](20260514%20Agentic%20platform_vF.pptx).
 - Transcript A — [Microsoft Support — Foundry platform and MCP servers, 22 May 2026](transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md).
-- Transcript B — [Mitie / Microsoft regular technical check-in, 26 May 2026](transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).
+- Transcript B — [Contoso / Microsoft regular technical check-in, 26 May 2026](transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md).

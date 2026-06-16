@@ -26,4 +26,4 @@ Drives subscription cost, model-deployment count, and blast-radius for hub-side 
 
 > one shared...one maybe one shared for dev...one shared for test
 
-— Vincent and Sourabh, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Vincent and Sourabh, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

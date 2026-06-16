@@ -28,4 +28,4 @@ Keep the current Mighty pattern (non-prod + prod subscriptions, resource groups 
 
 > how we work today...InfoSec must have agreed...it's already working...this is not...AI...way mighty decided
 
-— Mike and Vincent, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Mike and Vincent, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

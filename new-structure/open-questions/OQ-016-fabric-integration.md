@@ -15,7 +15,7 @@ What integration pattern connects Microsoft Fabric (warehouse, ML pipelines, Fab
 
 ## Why it matters
 
-Fabric is the existing analytical surface for Mitie; without a defined pattern, agents will hand-roll connections and miss the platform's governance.
+Fabric is the existing analytical surface for Contoso; without a defined pattern, agents will hand-roll connections and miss the platform's governance.
 
 ## Resolution path
 

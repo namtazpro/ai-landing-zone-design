@@ -28,4 +28,4 @@ Use Azure API Management's native ability to expose OpenAPI specs as MCP servers
 
 > can do Terraform...native resources...APP...Azure APP...MCP...confirmed that there is a protocol solution
 
-— Vincent and Emma, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Vincent and Emma, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

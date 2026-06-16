@@ -26,4 +26,4 @@ Defines the BC/DR pillar of the WAF review and constrains hub-Foundry topology, 
 
 > what availability...targets...failover...we haven't even...
 
-— Mike, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

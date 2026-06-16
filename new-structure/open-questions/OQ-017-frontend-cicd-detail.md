@@ -15,7 +15,7 @@ Confirm the frontend pipeline: `npm ci`, ESLint, Prettier, `tsc`, Jest 70% cover
 
 ## Why it matters
 
-Pipeline gates need to be ratified before frontend agents reach Mitie users; today the values come from the deck and have not been re-confirmed by the calls.
+Pipeline gates need to be ratified before frontend agents reach Contoso users; today the values come from the deck and have not been re-confirmed by the calls.
 
 ## Resolution path
 

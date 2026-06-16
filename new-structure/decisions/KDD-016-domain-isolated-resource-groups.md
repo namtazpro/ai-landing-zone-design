@@ -28,4 +28,4 @@ Resource groups are created per domain per environment (for example `EFF-Dev`, `
 
 > one subscription...non-product...within that...dev and test per domain resource group...dev...test not product...prod subscription
 
-— Sourabh, 26 May 2026, [Mitie / Microsoft regular technical check-in](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Sourabh, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

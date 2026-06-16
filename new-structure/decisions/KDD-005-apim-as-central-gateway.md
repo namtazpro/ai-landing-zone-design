@@ -28,4 +28,4 @@ Azure API Management (APIM) is the standard gateway for all API exposure. Backen
 
 > everything needs to be on APP...creating an API centre...one place...all the tools, agents, and everything...registry
 
-— Sourabh and Vincent, 22 / 26 May 2026, [Microsoft Support — 22 May](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md) and [Mitie / Microsoft — 26 May](../../transcripts/Mitie_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Sourabh and Vincent, 22 / 26 May 2026, [Microsoft Support — 22 May](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md) and [Contoso / Microsoft — 26 May](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
