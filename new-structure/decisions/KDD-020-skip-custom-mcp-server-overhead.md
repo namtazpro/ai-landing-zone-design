@@ -28,4 +28,4 @@ Use APIM's native MCP exposure (Terraform-driven) rather than custom-built FastM
 
 > why wouldn't we...use APP? If you can tick a box...we don't have...loads of servers...we're managing
 
-— Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— George Smith, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

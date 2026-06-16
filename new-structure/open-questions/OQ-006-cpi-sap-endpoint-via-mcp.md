@@ -24,4 +24,4 @@ CPI semantics (async, idempotency, retries) differ from Azure-native APIs and ne
 
 ## Source
 
-— Raised by Mike, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md); no resolution captured in transcript.
+— Raised by George Smith, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md); no resolution captured in transcript.

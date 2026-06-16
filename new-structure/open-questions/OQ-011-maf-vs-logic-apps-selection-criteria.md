@@ -24,4 +24,4 @@ The two engines overlap on simple flows; without explicit triggers (statefulness
 
 ## Source
 
-— Touched on by Vincent, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md); no formal criteria captured.
+— Touched on by John Blog, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md); no formal criteria captured.

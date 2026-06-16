@@ -28,4 +28,4 @@ Central hub deployment enables unified control: retirement tracking, version dep
 
 > when...model retirements...exactly through auditing who is using 4.1...block...throttling...capping
 
-— Vincent, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— John Blog, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

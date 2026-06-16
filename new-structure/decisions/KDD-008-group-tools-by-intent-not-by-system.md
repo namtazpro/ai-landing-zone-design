@@ -28,4 +28,4 @@ Group tools by user intent / business operation (for example a "checkout workflo
 
 > group by...intention rather than actual...how would you use...give it to someone to do something...the intention rather than actual...API call
 
-— Ha Duong, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jacob Phan, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

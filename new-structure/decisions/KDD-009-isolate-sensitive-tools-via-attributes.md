@@ -28,4 +28,4 @@ Sensitive endpoints inside a grouped MCP server use the MCP `allow_tools` attrib
 
 > if there is a MCP server...allow tools...attribute...only this list...can be seen by this agent
 
-— Emma Sun and Sourabh, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jane Star and Sanjay, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

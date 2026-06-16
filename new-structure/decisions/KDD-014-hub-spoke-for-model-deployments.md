@@ -28,4 +28,4 @@ A central hub Foundry instance in a shared resource group hosts all LLM model de
 
 > hub RG that's got its own foundry...models...deployed...Through the IPPI gateway...catalogued and registered here...model retirements...exactly who is using 4.1
 
-— Vincent, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— John Blog, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

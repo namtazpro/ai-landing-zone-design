@@ -28,4 +28,4 @@ Hub Foundry deploys multiple replicas of the same model to absorb rate-limit dem
 
 > multiple instances even in your hub...multiple domains...deploy multiple instances...through load balancing...models...hub...rate limiting
 
-— Vincent, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— John Blog, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

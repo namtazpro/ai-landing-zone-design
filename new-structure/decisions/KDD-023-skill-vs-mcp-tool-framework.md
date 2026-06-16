@@ -28,4 +28,4 @@ Skills encode deterministic workflows/instructions an agent should follow. MCP e
 
 > skill...workflow...agent...MCP server...interact with other system...make that system available...multiple agents
 
-— Ha Duong, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jacob Phan, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

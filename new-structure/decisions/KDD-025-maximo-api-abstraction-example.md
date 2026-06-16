@@ -28,4 +28,4 @@ Concrete case: collapse ~14 granular Maximo APIs into 7 abstracted operations ("
 
 > 14...APIs...MCP expose 7...instead of...tree dot...instead of...one dot...duplicate cheque create SR...one endpoint
 
-— Ha Duong and Sourabh, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Jacob Phan and Sanjay, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

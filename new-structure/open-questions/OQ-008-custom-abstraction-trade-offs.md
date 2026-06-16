@@ -26,4 +26,4 @@ Without explicit criteria, abstraction becomes either a vanity habit or a thing 
 
 > this is very use case specific...don't think that we can give clear guidance without knowing actual use cases
 
-— Ha Duong, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Jacob Phan, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

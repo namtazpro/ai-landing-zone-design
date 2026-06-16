@@ -28,4 +28,4 @@ Non-APIM systems (for example SAP via CPI) are registered in API Management and 
 
 > might be into...other systems...SAP uses CPI...we want to expose through MCP...discoverable by the AI
 
-— Mike, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— George Smith, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

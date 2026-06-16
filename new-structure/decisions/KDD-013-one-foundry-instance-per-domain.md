@@ -28,4 +28,4 @@ Each business domain (EFF, HR, Sales) gets one AI Foundry instance with one Foun
 
 > one Foundry instance...one project per use case...one RG per domain...one instance...one project per use case
 
-— Vincent and Sourabh, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— John Blog and Sanjay, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

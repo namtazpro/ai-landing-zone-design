@@ -28,4 +28,4 @@ Do not create one MCP server per API. Group APIs by use case or domain; one MCP 
 
 > we won't do one-to-one mapping for sure...group the tools...have one MCP...point for a group of tools instead of just one
 
-— Emma Sun and Ha Duong, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jane Star and Jacob Phan, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

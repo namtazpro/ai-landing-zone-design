@@ -26,4 +26,4 @@ Domain is the unit of isolation for resource groups, Foundry instances, billing 
 
 > why have we divided it this way?...they're just random work streams...cannot be in the KDD
 
-— Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— George Smith, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

@@ -15,7 +15,7 @@ Subscription-per-domain (stronger RBAC isolation) vs current resource-group-per-
 
 ## Why it matters
 
-Affects RBAC blast radius, billing rollup, Azure Policy scope, and what InfoSec must approve to deviate from the established Mighty pattern.
+Affects RBAC blast radius, billing rollup, Azure Policy scope, and what InfoSec must approve to deviate from the established Contoso pattern.
 
 ## Resolution path
 
@@ -26,4 +26,4 @@ Affects RBAC blast radius, billing rollup, Azure Policy scope, and what InfoSec 
 
 > we need to talk to other colleagues...why are we changing it
 
-— Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— George Smith, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

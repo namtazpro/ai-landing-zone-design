@@ -33,4 +33,4 @@
 | [KDD-025](KDD-025-maximo-api-abstraction-example.md) | Maximo API abstraction example | Decided |  |  |
 | [KDD-026](KDD-026-no-blanket-abstraction-requirement.md) | No blanket abstraction requirement | Decided |  |  |
 | [KDD-027](KDD-027-model-scaling-via-replicas-and-policies.md) | Model scaling via replicas and policies | Decided |  |  |
-| [KDD-028](KDD-028-reuse-existing-mighty-infrastructure-pattern.md) | Reuse existing Mighty infrastructure pattern | Decided |  |  |
+| [KDD-028](KDD-028-reuse-existing-contoso-infrastructure-pattern.md) | Reuse existing Contoso infrastructure pattern | Decided |  |  |

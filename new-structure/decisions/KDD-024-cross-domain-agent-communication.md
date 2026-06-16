@@ -28,4 +28,4 @@ Agents in one domain (for example EFF) may invoke agents in another (for example
 
 > share those resources...a multifunctional...useful...in the engineering space...Can they talk...cross boundaries
 
-— Mike, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— George Smith, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

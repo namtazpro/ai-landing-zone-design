@@ -1,22 +1,22 @@
 ---
 id: KDD-028
-title: Reuse existing Mighty infrastructure pattern
+title: Reuse existing Contoso infrastructure pattern
 status: Decided
 supersedes: null
 superseded_by: null
 created: 2026-05-26
 last_revised: 2026-06-08
 hld_sections: [04-solution-overview, 09-resource-organization]
-tags: [subscriptions, mighty, infosec]
+tags: [subscriptions, contoso, infosec]
 ---
 
 ## Context
 
-Re-opening the subscription model purely for the agentic platform would force an InfoSec review already settled for the existing Mighty topology, with no AI-specific driver to justify it.
+Re-opening the subscription model purely for the agentic platform would force an InfoSec review already settled for the existing Contoso topology, with no AI-specific driver to justify it.
 
 ## Decision
 
-Keep the current Mighty pattern (non-prod + prod subscriptions, resource groups per domain). Do not restructure to subscription-per-domain unless InfoSec mandates it.
+Keep the current Contoso pattern (non-prod + prod subscriptions, resource groups per domain). Do not restructure to subscription-per-domain unless InfoSec mandates it.
 
 ## Consequences
 
@@ -26,6 +26,6 @@ Keep the current Mighty pattern (non-prod + prod subscriptions, resource groups 
 
 ## Source
 
-> how we work today...InfoSec must have agreed...it's already working...this is not...AI...way mighty decided
+> how we work today...InfoSec must have agreed...it's already working...this is not...AI...way Contoso decided
 
-— Mike and Vincent, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— George Smith and John Blog, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

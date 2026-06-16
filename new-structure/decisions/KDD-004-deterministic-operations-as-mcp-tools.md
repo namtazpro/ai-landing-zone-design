@@ -28,4 +28,4 @@ All operations — deterministic or agentic — are modelled as MCP tools. Deter
 
 > for the deterministic way...can be modelled as a tool within MCPs anyway...calculated VAT...you can using MCP expose as a tool
 
-— Ha Duong, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jacob Phan, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

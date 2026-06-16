@@ -28,4 +28,4 @@ All tools are exposed via the Model Context Protocol (MCP). MCP is the default s
 
 > use MCP...it needs to be...because we need to align on like a strategy that everything needs to follow this. And if it's go outside, it needs to have like a very specific reason
 
-— Mike Agar and Francisco, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— George Smith and Francisco, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

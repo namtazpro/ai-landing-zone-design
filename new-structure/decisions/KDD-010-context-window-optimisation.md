@@ -28,4 +28,4 @@ Prefer abstracted, intent-driven APIs over granular ones. Evidence from internal
 
 > success rate will be a lot more better...average tokens...less...cost...less...don't bloat the context window
 
-— Ha Duong and Mike, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Jacob Phan and George Smith, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)

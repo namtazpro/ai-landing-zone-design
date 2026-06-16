@@ -39,7 +39,7 @@ Out of scope (for v1):
 
 Key assumptions:
 
-- The existing Contoso subscription pattern (non-prod + prod, resource-groups per domain) is reused — see [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md).
+- The existing Contoso subscription pattern (non-prod + prod, resource-groups per domain) is reused — see [KDD-028](../decisions/KDD-028-reuse-existing-contoso-infrastructure-pattern.md).
 - One AI Foundry instance per business domain, with one Foundry project per use case — see [KDD-013](../decisions/KDD-013-one-foundry-instance-per-domain.md).
 - Microsoft Entra ID is the enterprise identity authority.
 
@@ -67,7 +67,7 @@ Three Entra ID authentication layers are present: user-facing (Entra ID Protecti
 
 > Diagram placeholder — see [assets/diagrams/hld/](../assets/diagrams/hld/). TODO: replace deck slide with an HLD-grade logical view.
 
-Decisions: [KDD-005](../decisions/KDD-005-apim-as-central-gateway.md), [KDD-014](../decisions/KDD-014-hub-spoke-for-model-deployments.md), [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md). Open: [OQ-001](../open-questions/OQ-001-subscription-strategy.md), [OQ-004](../open-questions/OQ-004-multi-region-failover.md), [OQ-005](../open-questions/OQ-005-hub-foundry-instance-count.md).
+Decisions: [KDD-005](../decisions/KDD-005-apim-as-central-gateway.md), [KDD-014](../decisions/KDD-014-hub-spoke-for-model-deployments.md), [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-contoso-infrastructure-pattern.md). Open: [OQ-001](../open-questions/OQ-001-subscription-strategy.md), [OQ-004](../open-questions/OQ-004-multi-region-failover.md), [OQ-005](../open-questions/OQ-005-hub-foundry-instance-count.md).
 
 ---
 
@@ -196,12 +196,12 @@ Open: [OQ-014](../open-questions/OQ-014-per-agent-identity-vs-shared-sp.md), [OQ
 Working layout (carried forward from the current Contoso pattern):
 
 - **Subscriptions.** Two subscriptions — non-prod (dev + test) and prod. No subscription-per-domain split today; see [OQ-001](../open-questions/OQ-001-subscription-strategy.md).
-- **Resource groups.** One per domain per environment (for example `EFF-Dev`, `EFF-Test`, `HR-Prod`). See [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md).
+- **Resource groups.** One per domain per environment (for example `EFF-Dev`, `EFF-Test`, `HR-Prod`). See [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-contoso-infrastructure-pattern.md).
 - **Shared hub.** One additional shared resource group hosts the hub Foundry and shared platform services (APIM, Toolbox, observability) — see [KDD-014](../decisions/KDD-014-hub-spoke-for-model-deployments.md).
 
 > TODO: confirm management-group placement, naming convention (per Contoso standard), and tagging schema (domain, environment, agent, cost-centre).
 
-Decisions: [KDD-013](../decisions/KDD-013-one-foundry-instance-per-domain.md), [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md). Open: [OQ-001](../open-questions/OQ-001-subscription-strategy.md), [OQ-003](../open-questions/OQ-003-domain-definition-logic.md).
+Decisions: [KDD-013](../decisions/KDD-013-one-foundry-instance-per-domain.md), [KDD-016](../decisions/KDD-016-domain-isolated-resource-groups.md), [KDD-028](../decisions/KDD-028-reuse-existing-contoso-infrastructure-pattern.md). Open: [OQ-001](../open-questions/OQ-001-subscription-strategy.md), [OQ-003](../open-questions/OQ-003-domain-definition-logic.md).
 
 ---
 
@@ -325,7 +325,7 @@ Each KDD lives as its own file under [decisions/](../decisions/) with full conte
 | [KDD-025](../decisions/KDD-025-maximo-api-abstraction-example.md) | Maximo API abstraction example | Decided | 5, 11 |
 | [KDD-026](../decisions/KDD-026-no-blanket-abstraction-requirement.md) | No blanket abstraction requirement | Decided | 5 |
 | [KDD-027](../decisions/KDD-027-model-scaling-via-replicas-and-policies.md) | Model scaling via replicas and policies | Decided | 5, 10, 11, 14 |
-| [KDD-028](../decisions/KDD-028-reuse-existing-mighty-infrastructure-pattern.md) | Reuse existing Mighty infrastructure pattern | Decided | 4, 9 |
+| [KDD-028](../decisions/KDD-028-reuse-existing-contoso-infrastructure-pattern.md) | Reuse existing Contoso infrastructure pattern | Decided | 4, 9 |
 
 ---
 

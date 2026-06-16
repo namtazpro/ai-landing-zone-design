@@ -28,4 +28,4 @@ Foundry Toolbox sits as a second-layer MCP gateway above APIM-exposed MCP server
 
 > Foundry toolbox...additional layer...MCP...gateway...to agent...and that I agree with you...versioning and all that
 
-— Emma Sun, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)
+— Jane Star, 22 May 2026, [Microsoft Support — Foundry platform and MCP servers](../../transcripts/Microsoft%20Support%20-%20Foundry%20platform%20and%20MCP%20servers%2022%20may%202026.md)

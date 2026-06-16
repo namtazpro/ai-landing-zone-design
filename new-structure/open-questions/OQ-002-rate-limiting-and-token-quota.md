@@ -26,4 +26,4 @@ Per-domain throttling is the only way to keep the shared hub fair across consume
 
 > rate limit...token limit server will impact production...how do we...apply policies
 
-— Sourabh and Vincent, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
+— Sanjay and John Blog, 26 May 2026, [Contoso / Microsoft regular technical check-in](../../transcripts/Contoso_Microsoft%20-%20regular%20technical%20check-in%20call%2026%20May%202026.md)
