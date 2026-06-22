@@ -1,0 +1,74 @@
+# OCTA design-workspace MCP server
+
+A read-only [Model Context Protocol](https://modelcontextprotocol.io) server that exposes the OCTA Agentic Platform architecture workspace — key design decisions (KDDs), open questions (OQs), the High-Level Design (HLD), meeting transcripts, the asset index, and direct-request logs — to any MCP client (VS Code, Claude Desktop, etc.).
+
+The server never writes to the workspace. It reads the live files under [new-structure/](../new-structure/) and [transcripts/](../transcripts/) on every call, so results always reflect the current state.
+
+## Tools
+
+| Tool | Purpose |
+| --- | --- |
+| `search_artefacts` | Full-text search across KDDs, OQs, HLD sections, transcripts, and requests, ranked by match count. |
+| `list_decisions` | List KDDs, filterable by `status`, `tag`, or `hld_section`. |
+| `get_decision` | Fetch one KDD by id (accepts `KDD-001`, `kdd1`, or `1`). |
+| `list_open_questions` | List OQs, filterable by `status`, `tag`, or `hld_section`. |
+| `get_open_question` | Fetch one OQ by id. |
+| `list_hld_sections` | List the numbered top-level HLD sections. |
+| `get_hld_section` | Fetch one HLD section by number or title substring. |
+| `list_transcripts` | List ingested meeting transcripts. |
+| `get_transcript` | Fetch a transcript by (partial) name, with optional truncation. |
+| `list_assets` | Return the diagram/deck asset index. |
+| `list_requests` | List direct architect/consultant request logs. |
+
+## Resources
+
+| URI | Content |
+| --- | --- |
+| `octa://hld` | The full HLD document. |
+| `octa://decisions` | Compact index of all KDDs. |
+| `octa://open-questions` | Compact index of all OQs. |
+| `octa://decision/{id}` | A single KDD as raw markdown. |
+| `octa://open-question/{id}` | A single OQ as raw markdown. |
+
+## Install
+
+From this folder:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e .
+```
+
+## Run
+
+Over stdio (the default; used by MCP clients):
+
+```powershell
+python -m octa_design_mcp
+```
+
+The workspace root is auto-discovered as the repository root. Override it with the `OCTA_WORKSPACE_ROOT` environment variable if you run the server from elsewhere.
+
+## Use in VS Code
+
+A workspace config is provided at [../.vscode/mcp.json](../.vscode/mcp.json). Open the Command Palette and run **MCP: List Servers** to start `octa-design`, then reference its tools from Copilot Chat agent mode. If you installed into a virtual environment, point the `command` in `mcp.json` at that interpreter (for example `${workspaceFolder}/mcp-server/.venv/Scripts/python.exe`).
+
+## Use in Claude Desktop
+
+Add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "octa-design": {
+      "command": "python",
+      "args": ["-m", "octa_design_mcp"],
+      "cwd": "C:/Users/virouet/source/repos/ai-landing-zone-design/mcp-server",
+      "env": {
+        "OCTA_WORKSPACE_ROOT": "C:/Users/virouet/source/repos/ai-landing-zone-design"
+      }
+    }
+  }
+}
+```

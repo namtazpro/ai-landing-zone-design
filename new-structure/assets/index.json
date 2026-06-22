@@ -9,5 +9,17 @@
       "scope": "hld",
       "notes": "Original source baseline. Slide 18 (Base image CI/CD) is title-only in the extracted XML."
     }
+  ],
+  "documents": [
+    {
+      "id": "doc-ai-observability-hlr-v01",
+      "path": "AI Observability - HLR and Detailed Requirements.docx",
+      "title": "AI Observability — HLR and Detailed Requirements",
+      "date": "2026-06-02",
+      "version": "V0.1",
+      "author": "Pankaj Arora",
+      "scope": "response-source",
+      "notes": "Customer-supplied requirements document. Despite the .docx extension the file is a legacy binary .doc (OLE). Response tracker lives at new-structure/responses/ai-observability-solution-mapping.md."
+    }
   ]
 }

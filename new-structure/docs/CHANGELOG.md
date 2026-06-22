@@ -19,6 +19,7 @@ artefacts plus `git log` remain the authoritative history; this file is the fast
 | Highest OQ | OQ-020 → next new open question is **OQ-021** |
 | Source baseline | [20260514 Agentic platform_vF.pptx](../assets/decks/20260514%20Agentic%20platform_vF.pptx) (14 May 2026) |
 | Transcripts ingested | 22 May 2026 (Foundry/MCP support call); 26 May 2026 (Contoso/Microsoft check-in) |
+| Customer requirements docs ingested | 2 June 2026 (AI Observability HLR / DR — Mitie / Pankaj Arora) |
 | LLD | Not yet authored |
 
 Keep this table in sync with the latest checkpoint below.
@@ -54,6 +55,16 @@ Per iteration (new transcript, direct request, or new asset):
 ```
 
 ## Checkpoints
+
+### 2026-06-22 — AI Observability requirements response added
+
+- Trigger: direct request — convert `assets/AI Observability - HLR and Detailed Requirements.docx` into a workable markdown tracker that pairs every requirement and risk with the Microsoft solution proposition.
+- KDDs: none added. Highest remains KDD-028.
+- OQs: none added. Highest remains OQ-020. Six candidate OQs are listed in section 10 of the new tracker and should be promoted to OQ files when picked up (covering ServiceNow / SLA model, Purview Compliance Manager licensing, vendor list for low-code / external agents, performance / availability / DR targets, bias monitoring approach, schema extension governance).
+- HLD sections touched: none. The HLD is not edited by this iteration; the tracker references it as the layered architecture baseline.
+- Assets: registered the source `.docx` (legacy binary `.doc` despite the extension) in `assets/index.json` under a new `documents` collection; added `new-structure/responses/` with `README.md` and the working tracker `ai-observability-solution-mapping.md`.
+- Microsoft proposition baseline (per direct request): Agent365 (Entra Agent ID), Microsoft Foundry Control Plane, and Azure API Management AI Gateway, supported by Azure Monitor, Microsoft Fabric (lakehouse + Data Agent), Microsoft Purview, Microsoft Sentinel, Defender for Cloud, and Power BI.
+- Next up: walk the tracker with the customer, promote the six open items in section 10 to OQ files, and decide whether any Microsoft-side commitments (for example Agent365 as the registration plane) should be ratified as new KDDs.
 
 ### 2026-06-16 — GitHub Pages documentation site added
 
