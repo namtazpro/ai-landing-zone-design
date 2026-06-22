@@ -19,7 +19,8 @@
       "version": "V0.1",
       "author": "Pankaj Arora",
       "scope": "response-source",
-      "notes": "Customer-supplied requirements document. Despite the .docx extension the file is a legacy binary .doc (OLE). Response tracker lives at new-structure/responses/ai-observability-solution-mapping.md."
+      "extract_path": "AI Observability - HLR and Detailed Requirements.source.md",
+      "notes": "Customer-supplied requirements document. Despite the .docx extension the file is a legacy binary .doc (OLE). Read-only markdown extract sits beside it (extract_path) for traceability and searchability; .docx remains authoritative. Response tracker lives at new-structure/responses/ai-observability-solution-mapping.md."
     }
   ]
 }

@@ -21,4 +21,5 @@ Microsoft solution proposition, tracking status, gaps and open decisions.
 
 | File | Customer ask | Source asset | Status |
 | --- | --- | --- | --- |
-| [ai-observability-solution-mapping.md](ai-observability-solution-mapping.md) | AI Observability — HLR and detailed requirements | [../assets/AI Observability - HLR and Detailed Requirements.docx](../assets/AI%20Observability%20-%20HLR%20and%20Detailed%20Requirements.docx) | Draft v0.1 |
+| [ai-observability-solution-mapping.md](ai-observability-solution-mapping.md) | AI Observability — HLR and detailed requirements, anchored on the OCTA HLD baseline. | [../assets/AI Observability - HLR and Detailed Requirements.docx](../assets/AI%20Observability%20-%20HLR%20and%20Detailed%20Requirements.docx) | Draft v0.1 |
+| [ai-observability-microsoft-recommendation.md](ai-observability-microsoft-recommendation.md) | AI Observability — independent Microsoft platform recommendation, built bottom-up without reference to the OCTA HLD. Explicitly covers Copilot Studio, Foundry prompt agents, Foundry hosted agents and third-party vendor agents. | [../assets/AI Observability - HLR and Detailed Requirements.docx](../assets/AI%20Observability%20-%20HLR%20and%20Detailed%20Requirements.docx) | Draft v1 |
