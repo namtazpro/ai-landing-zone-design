@@ -49,7 +49,7 @@ adoptable, so customers can phase the rollout.
 
 | Plane | Role | Microsoft components |
 | --- | --- | --- |
-| Identity & registration | Give every agent a managed identity and a registered fleet record carrying ownership, lifecycle, compliance evidence. | Microsoft Entra Workload ID, Microsoft Entra Agent ID (the agent-specific identity primitive), Microsoft Defender for Cloud Apps (SaaS agent inventory), Microsoft Purview Compliance Manager (evidence store). |
+| Identity & registration | Give every agent a managed identity and a registered fleet record carrying ownership, lifecycle, compliance evidence. | Microsoft Entra Agent ID (the agent-specific identity primitive), Microsoft Defender for Cloud Apps (SaaS agent inventory), Microsoft Purview Compliance Manager (evidence store). |
 | Ingress & AI gateway | One controlled path for every model and tool call; apply auth, quotas, content safety, semantic cache, token metering. | Azure API Management with AI Gateway policies (`llm-token-limit`, `llm-emit-token-metric`, `llm-semantic-cache-store/lookup`, `llm-content-safety`), standard APIM policies for auth, rate limit, JWT validation, IP filtering, and product / subscription keys. |
 | Telemetry | Vendor-neutral OpenTelemetry stream into Microsoft observability stores. | Foundry tracing (OTel-native), OpenTelemetry SDKs for hosted and custom agents, Azure Monitor OpenTelemetry distro, Application Insights, Log Analytics workspaces, Azure Data Explorer (Kusto) for high-volume trace analytics, Azure Managed Grafana for SRE dashboards. |
 | Business events | Standardised business-meaningful events from all agents, stored once, reportable many times. | Microsoft Fabric Lakehouse on OneLake, Fabric Eventstream for streaming ingestion, Fabric Data Activator for threshold-based business alerts, Microsoft Purview Data Map for schema governance. |
@@ -71,8 +71,7 @@ Foundry prompt agents use thin adaptors described below.
   Copilot Studio environment to capture conversation telemetry, topic
   triggers, generative answers, action calls and errors with `traceparent`
   correlation.
-- **Audit and compliance** — Microsoft Purview audit log captures M365
-  Copilot interactions; Dataverse retains conversation transcripts and
+- **Audit and compliance** — Microsoft Purview audit logs will capture interactions with any agents published via M365 or connected via SDKs; Dataverse retains conversation transcripts and
   analytics tables; Microsoft Sentinel ingests via the Microsoft 365
   connector.
 - **Business events** — a published platform Power Automate cloud flow is
