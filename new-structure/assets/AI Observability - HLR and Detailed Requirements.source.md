@@ -1,7 +1,7 @@
 # AI Observability — HLR and Detailed Requirements (source extract)
 
 > **Source**: [AI Observability - HLR and Detailed Requirements.docx](AI%20Observability%20-%20HLR%20and%20Detailed%20Requirements.docx)
-> (V0.1, 2 June 2026, Pankaj Arora). The original file is a legacy binary `.doc` (OLE) despite the `.docx` extension.
+> (V0.1, 2 June 2026, [hidden]). The original file is a legacy binary `.doc` (OLE) despite the `.docx` extension.
 >
 > **Purpose**: read-only raw extract for traceability. Authoritative copy is the .docx. The Microsoft response and solution mapping lives in
 > [../responses/ai-observability-solution-mapping.md](../responses/ai-observability-solution-mapping.md).
@@ -15,7 +15,7 @@ IS High-Level/Detailed Requirements Document
 |  |  |
 | --- | --- |
 | Change/Project reference: | AI Observability |
-| Heading: | PRIO |
+| Heading: | OCTA|
 
 ***Change
 History***
@@ -23,7 +23,7 @@ History***
 |  |  |  |  |
 | --- | --- | --- | --- |
 | **Version** | **Created / Updated** | **Details of Change** | **Author (s) or  Updated by** |
-| V0.1 | 02/06/2026 | Initial Draft | Pankaj Arora |
+| V0.1 | 02/06/2026 | Initial Draft | [hidden] |
 |  |  |  |  |
 
 ***Glossary***
@@ -31,7 +31,7 @@ History***
 |  |  |
 | --- | --- |
 | **Abbreviation / Term** | **Definition** |
-| CAFM | **C**omputer **A**ided **F**acilities **M**anagement system. (In this project the CAFM in use is IBM’s enterprise asset management software ‘Maximo’)  Note: Maximo has its own direct access web-based user interface.  https://fortemaximo.mitie.com/maximo/webclient/login/login.jsp |
+| CAFM | **C**omputer **A**ided **F**acilities **M**anagement system. |
 | FR | **F****unctional** **R****equirement** |
 | NFR | **N****on-****F****unctional** **R****equirement** |
 | SR | **S****ervice** **R****equest  Sometimes referred to as ‘Job’ or ‘SR Job’** |
@@ -61,12 +61,12 @@ History***
 
 Contents
 
-1.     Introduction. 5
+1     Introduction. 5
 
 1.1.       Document
 Purpose. 5
 
-2.     Business
+2   Business
 Need. 5
 
 2.1.       Project
@@ -79,10 +79,10 @@ Background. 5
 2.4.       Out of
 Scope. 7
 
-3.     Business
+3     Business
 Processes/Models/Overview.. 8
 
-4.     Assumptions,
+4     Assumptions,
 Dependencies, Risks & Constraints. 9
 
 4.1.       Assumptions. 9
@@ -94,7 +94,7 @@ Dependencies, Risks & Constraints. 9
 
 4.4.       Constraints. 11
 
-5.     Functional
+5     Functional
 Requirements. 12
 
 5.1.       High
@@ -103,13 +103,13 @@ Level Requirements. 12
 5.2.       Detailed
 Requirements. 13
 
-6.     Non-Functional
+6     Non-Functional
 Requirements. 21
 
-7.     Requirement
+7     Requirement
 Traceabilty Matrix. 23
 
-8.     Document
+8     Document
 Review and Sign Off. 23
 
 ---
@@ -130,7 +130,7 @@ security, operations and technical teams.
 
 ## 2.1.       Project Background
 
-Mitie is deploying AI agents across multiple business functions and delivery
+Contoso is deploying AI agents across multiple business functions and delivery
 teams. As adoption increases, a consistent enterprise approach is required to
 observe how these agents operate, what business outcomes they produce, what
 risks they introduce and what value they deliver.
@@ -305,11 +305,9 @@ These dashboards support role-based reporting, auditability and
 governed query access for executive, business, engineering, security and
 operational audiences.
 
-1.     Role-based
-dashboards for operational, business, executive and compliance reporting.
+1     Role-based dashboards for operational, business, executive and compliance reporting.
 
-2.     Governed
-natural language query capability for authorised users against approved curated
+2     Governed natural language query capability for authorised users against approved curated
 datasets.
 
 
@@ -625,190 +623,3 @@ sources and refresh cadence.
 
 
 
-
-
-
-
-# 7.   Requirement Traceabilty Matrix
-
-The RTM can be accessed via the following link:
-
-
-
----
-
-# 8.   Document Review and Sign Off
-
-As part of the review and sign off process, it is important to
-refer to the following criteria to ensure that the document is fit for purpose.
-There are two types of review criteria:
-
-·
-Generic
-criteria – which can apply to any document.
-
-·
-Specific criteria – that assess specific areas within a
-particular document type.
-
-The Generic criteria that must be used when considering
-deliverables are:
-
-|  |  |
-| --- | --- |
-| 1. | Has each section of the document been addressed to the expected level? |
-| 2. | Could this deliverable, in its current state, be used as an input into a subsequent document? |
-
-**Specific Criteria**
-
-For this deliverable, the following specific criteria should be
-applied to the review:
-
-|  |  |
-| --- | --- |
-| 1. | Does the document clearly identify the background to the change? |
-| 2. | Does the document clearly identify what areas are in and out of scope for the change? |
-| 3. | Does the document clearly identify and adequately describe the specific business processes/scenarios which may be impacted by a solution to the business problem/opportunity? |
-| 4. | Are key Assumptions, Issue & Dependencies identified? |
-
-
-
-As part of the review and sign off process, it is important to
-refer to the following criteria to ensure that the document is fit for purpose.
-
-|  |
-| --- |
-| Has each section of the document been addressed to the expected level? |
-| Could this deliverable, in its current state, be used as an input into a subsequent document? |
-
-Approval emails must be added and attached to the appropriate
-sections below.
-
-|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| |  |  |  |  | | --- | --- | --- | --- | | ***Approver (Accountable)*** | | |  | | Name | Role | Approval (email/e-signature) | Date | |  |  |  |  |       |  |  |  |  | | --- | --- | --- | --- | | ***Authors (Responsible)*** | | |  | | Name | Role | Date | | |  |  |  | | |  |  |  |  |       |  |  |  |  |  | | --- | --- | --- | --- | --- | | ***Reviewers*** ***(Consulted)*** | |  | | | | Name | Role | | Contribution |  | |  |  | |  |  | |  |  | |  |  | |  |  | |  |  | |  |  |  |  |  |      |  |  |  | | --- | --- | --- | | ***Distributed (Informed)*** | | | | Name | Role | Comment | |  |  |  | |
-
----
-
-*<end document>*
-
----
-
-[MA1]Are
-we covering Human in the Loop / actionable dashboards here?
-
-[PA2]No
-- I will keep it separate for now as a control panel requirement however we may
-want to know how many & how often decisions are being made by Humans &
-why which is an observability requirement & I have added it.
-
-[MA3]Should
-we be looking (maybe long term) at bringing external AI logs into this main
-control tower (E.g. SuccessFactors's Joule)
-
-[PA4]From
-a PRIO’s scope perspective, in my opinion that is out of scope. Happy to
-discuss & keep it open for future
-
-[MA5]https://mitiegrp.sharepoint.com/sites/MitieQHSE/Integrated%20Management%20System/Forms/AllItems.aspx?id=%2Fsites%2FMitieQHSE%2FIntegrated%20Management%20System%2FResponsible%20and%20Ethical%20AI%20Policy%5FMG%28POL%29871%2Epdf&parent=%2Fsites%2FMitieQHSE%2FIntegrated%20Management%20System
-
-we have the AI policy, we need to make sure these
-requirements deliver against what that policy demands.
-
-For example, the policy states "Mitie will
-actively avoid unfair or biased outcomes in AI systems. Bias detection methods
-will
-
-be applied during development, and both data and
-decision processes will be tested regularly
-
-for potential bias. Where bias is identified,
-corrective action must be taken promptly." - so we need to build this into
-up front and regular reporting capability? "AI systems must not
-discriminate on the basis of protected characteristics such as age,
-
-ethnicity, disability, or gender. Where monitoring
-identifies unintended or unfair outcomes,
-
-corrective action must be taken promptly to address the
-issue and prevent recurrence"
-
-" AI models will be developed with a focus on
-transparency and interpretability. Documentation
-
-of model development, including algorithms used,
-training data, and evaluation metrics, will be
-
-maintained and controlled. Before deployment, all AI
-models will undergo rigorous bias
-
-detection and mitigation testing. Techniques will be
-applied to ensure fair and equitable
-
-outcomes, and continuous monitoring will be conducted
-after deployment"
-
-"AI decisions must be explainable to relevant
-stakeholders. We commit to using explainable AI
-
-techniques to ensure that decisions can be understood
-and justified. We will update our
-
-whistleblowing and other reporting mechanisms to
-include reports of ethical concerns related
-
-to AI. "
-
-"To maintain confidence in our systems, we will
-implement ongoing monitoring of AI
-
-performance, including regular assessments of
-effectiveness, fairness, and security. In addition,
-
-both internal and external audit teams will conduct
-periodic reviews of AI processes and
-
-systems to test compliance with ethical standards and
-regulatory requirements.
-
-"
-
-" All decisions of significance must include
-human review, particularly where outcomes could
-
-affect safety, employment or legal rights. Automated
-decisions that impact individual rights
-
-must always provide a clear route for human
-reconsideration"
-
-". Mitie will maintain clear internal escalation
-paths so that employees and customers can
-
-challenge AI outputs to ensure that concerns are
-addressed and that human accountability
-
-remains central to AI use"
-
-"Correlations between model outputs and protected
-characteristics will be routinely assessed
-
-and features causing significant correlation with
-protected characteristics must be reviewed
-
-and modified or removed"
-
-etc. I think we need to make sure we have done a full
-review against this!
-
-[PA6]Thanks
-@Michael Agar. I have added AI Ethics in scope
-& also a detailed requirement for human in the loop, however I am not sure
-all the AI ethics policies need to be observed via this requirement.
-
-I have added couple of related NFR’s.
-
-Many of these policies are set at inception of the project & part of
-development. They need to be governed & policed but I am not sure how they
-would fit into this framework that we are trying to build. Probably need more
-thoughts post an MVP for these requirements.
