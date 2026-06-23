@@ -3,14 +3,27 @@
 | Field | Value |
 | --- | --- |
 | Purpose | First-pass catalogue of the agent types an enterprise typically ends up with across Microsoft and third-party platforms. Useful as input for observability scope, governance perimeter, registration / fleet management, and vendor strategy conversations. |
-| Status | Draft v1.1 — 2026-06-23. Added Telemetry column per agent type. Expect additions as the market evolves. |
+| Status | Draft v1.2 — 2026-06-23. Split into Part A (agent types, sections 1–6) and Part B (cross-cutting axes, section 7). Per-table telemetry convention added. Expect additions as the market evolves. |
 | Author | Microsoft architecture |
 
 The list groups agents by **who builds them** and **where they run**, because those two axes drive everything else (identity, telemetry, cost, governance).
 
+The document is in two parts:
+
+- **Part A — Agent types** (sections 1–6). The actual catalogue of agents the customer ends up running.
+- **Part B — Cross-cutting categorisations** (section 7). Orthogonal axes used in policy and governance conversations regardless of which agent type is involved.
+
+Section 8 lists open additions.
+
+---
+
+# Part A — Agent types
+
 ## 1. Microsoft pre-built Copilots
 
 Agents Microsoft ships as a product. The customer adopts and configures them but does not author the agent itself.
+
+**Telemetry convention used in this table:** product admin centre / built-in dashboards + **Microsoft Purview Audit** for cross-Copilot interaction logs + **Microsoft Defender for Cloud Apps (DCA)** for shadow-AI discovery. Surface-specific stores (Edge for Business, GitHub Copilot metrics API, Power BI activity log) are called out where they're the primary source.
 
 | Agent | Surface | Notes | Telemetry source |
 | --- | --- | --- | --- |
@@ -35,6 +48,8 @@ Agents Microsoft ships as a product. The customer adopts and configures them but
 
 Agents the customer authors using Microsoft authoring surfaces. Microsoft hosts the runtime.
 
+**Telemetry convention used in this table:** product-native analytics (**Copilot Studio Analytics**, **Power Platform admin analytics**, **Bot Analytics**) + **Azure Application Insights** wired by the scaffold or runtime. For Foundry agents specifically: **Foundry Tracing (OpenTelemetry) + Continuous Evaluation** as the primary observability plane. **APIM AI Gateway** added on top whenever model traffic is proxied through it.
+
 | Agent | Authoring surface | Runtime / surface | Notes | Telemetry source |
 | --- | --- | --- | --- | --- |
 | Copilot Studio — declarative agent | Copilot Studio (no-code) | M365 Copilot, Teams, web channels | Topics + actions + knowledge; lightweight. | Copilot Studio Analytics; Application Insights linkage; Purview Audit. |
@@ -58,6 +73,8 @@ Agents the customer authors using Microsoft authoring surfaces. Microsoft hosts 
 
 Agents written in customer code and hosted on customer infrastructure (Azure or elsewhere). Maximum flexibility, maximum responsibility.
 
+**Telemetry convention used in this table:** **OpenTelemetry → Azure Application Insights / Log Analytics** as the standard pattern (or Managed Prometheus + Grafana where the team prefers metrics-first). **APIM AI Gateway** with `llm-emit-token-metric` / `llm-token-limit` whenever the model call is proxied. Container / runtime metrics from Azure Monitor for Containers, AKS, App Service or Functions for the host plane.
+
 | Agent | Framework | Typical runtime | Notes | Telemetry source |
 | --- | --- | --- | --- | --- |
 | Semantic Kernel agent | Microsoft Semantic Kernel | Azure Container Apps, AKS, App Service, Functions, on-prem | First-party Microsoft framework. | Built-in OpenTelemetry → App Insights / Log Analytics; APIM AI Gateway token metrics; container runtime metrics. |
@@ -74,6 +91,8 @@ Agents written in customer code and hosted on customer infrastructure (Azure or 
 ## 4. Third-party SaaS agents (vendor-built, customer-licensed)
 
 Agents the customer's SaaS vendors ship inside their own platforms. Observed via vendor telemetry, audit logs, connectors and SaaS-posture tooling.
+
+**Telemetry convention used in this table:** **vendor audit log / events API** as the source of truth + **SIEM connector → Microsoft Sentinel** for central correlation + **Defender for Cloud Apps (DCA)** for posture, activity policies and shadow-AI discovery. Vendor-side AI-specific analytics (Einstein Trust Layer, Now Assist analytics, OpenAI Compliance API…) added where they expose AI usage beyond raw audit.
 
 | Agent | Vendor / platform | Notes | Telemetry source |
 | --- | --- | --- | --- |
@@ -103,6 +122,8 @@ Agents the customer's SaaS vendors ship inside their own platforms. Observed via
 
 Agents the customer authors but on non-Microsoft platforms. They count as part of the estate and need observability and governance even though the build surface is not Microsoft's.
 
+**Telemetry convention used in this table:** **cloud-native logs of the host platform** (AWS CloudTrail + CloudWatch, GCP Cloud Logging + Cloud Trace, OpenAI / Anthropic usage and Compliance APIs) + client-side **OpenTelemetry** when the agent code is hosted by the customer + **APIM AI Gateway** when traffic is proxied through Azure. **DCA** added for posture on the SaaS authoring surface (ChatGPT Enterprise, Anthropic, etc.).
+
 | Agent | Platform | Notes | Telemetry source |
 | --- | --- | --- | --- |
 | Bedrock Agents | AWS Bedrock | AWS-native agent service. | CloudWatch + CloudTrail; Bedrock model invocation logs; export to Sentinel via SIEM connector or S3 ingest. |
@@ -117,6 +138,8 @@ Agents the customer authors but on non-Microsoft platforms. They count as part o
 
 Agents that show up at the edge of the estate — devices, browsers, plug-ins — often outside central IT's natural inventory.
 
+**Telemetry convention used in this table:** **Microsoft Intune + Microsoft Defender for Endpoint** for the device plane + **Microsoft Edge for Business** reports for in-browser AI + **Defender for Cloud Apps (DCA) / secure web gateway egress logs** for shadow-AI discovery. Contact-centre or OT platforms expose their own analytics; surface them via their vendor connectors into Sentinel.
+
 | Agent | Surface | Notes | Telemetry source |
 | --- | --- | --- | --- |
 | Windows Copilot+ on-device agents | Copilot+ PCs (NPU) | Local inference, Recall, Click-to-Do, Cocreator. | Intune / Defender for Endpoint device diagnostics; Windows diagnostic data; very limited interaction logging. |
@@ -127,6 +150,10 @@ Agents that show up at the edge of the estate — devices, browsers, plug-ins �
 | SaaS in-product AI features | Hundreds of SaaS apps | Granular shadow-AI surface. | DCA app catalogue + activity policies; SWG / proxy logs. |
 | Voice / IVR agents | Contact-centre platforms | Genesys, NICE, Five9, Microsoft Digital Contact Center Platform. | Contact-centre analytics; call-recording / transcript stores; Azure Communication Services + App Insights for MS DCCP. |
 | Robotic / physical agents | Industrial / robotics | Out of scope for most enterprise governance today but worth flagging. | OT telemetry (Sentinel for IoT / OT, Defender for IoT); vendor robot-fleet consoles. |
+
+---
+
+# Part B — Cross-cutting categorisations
 
 ## 7. Common cross-cutting categories
 
